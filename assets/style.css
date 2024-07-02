@@ -50,6 +50,10 @@ body {
 	position: relative;
 }
 
+#referencement-local {
+	display: none;
+}
+
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
