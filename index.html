@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- Balisage des microdonnées ajouté par l'outil d'aide au balisage de données structurées de Google -->
-<html lang="fr"><head>
+<html lang="fr">
+<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	<meta charset="UTF-8"></meta>
 	<title>Photographe - Portfolio Nina Carducci</title>
@@ -18,7 +19,6 @@
 	<script defer="" src="./assets/scripts.js"></script>
 </head>
 <body>
-
 <span itemscope itemtype="http://schema.org/LocalBusiness"><header class="top-header">
 	<h1 itemprop="name" class="name">Nina Carducci</h1>
 	<nav class="nav">   
@@ -61,7 +61,7 @@
 </section>
 <section id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="Photo de Nina photographe"/>
+		<img itemprop="image" src="./assets/images/nina.webp" alt="Photo de Nina photographe"/>
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -77,9 +77,9 @@
 <span itemprop="postalCode">3200 Bordeaux</span></li></span>
 				<li><strong>Numéro de téléphone : </strong>
 <span itemprop="telephone">05 56 67 78 89</span></li>
-				<li itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification"><strong>Dispoonibilité : </strong>
+				<li itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification"><strong>Disponibilité : </strong>Je réponds au téléphone du 
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
-<span itemprop="name">Je réponds au téléphone du lundi au vendredi de 10 h à 19 h</span></span></li>
+<span itemprop="name">lundi au vendredi</span> </span>de <time itemprop="opens" content="10h" datetime="10:00">10h</time> à <time itemprop="closes" content="19h" datetime="19:00">19h</time></li>
 			</ul>
 		</div>
 	</div>
@@ -172,5 +172,7 @@
 		</div>
 	</div>
 </footer>
+
+
 </body>
 </html>
