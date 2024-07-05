@@ -1,8 +1,3 @@
-/*!
-  * Bootstrap v5.1.3 (https://getbootstrap.com/)
-  * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
 (function(global,factory){typeof exports==='object'&&typeof module!=='undefined'?module.exports=factory():typeof define==='function'&&define.amd?define(factory):(global=typeof globalThis!=='undefined'?globalThis:global||self,global.bootstrap=factory())})(this,(function(){'use strict';const MAX_UID=1000000;const MILLISECONDS_MULTIPLIER=1000;const TRANSITION_END='transitionend';const toType=obj=>{if(obj===null||obj===undefined){return `${obj}`}
 return{}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase()};const getUID=prefix=>{do{prefix+=Math.floor(Math.random()*MAX_UID)}while(document.getElementById(prefix));return prefix};const getSelector=element=>{let selector=element.getAttribute('data-bs-target');if(!selector||selector==='#'){let hrefAttr=element.getAttribute('href');if(!hrefAttr||!hrefAttr.includes('#')&&!hrefAttr.startsWith('.')){return null}
 if(hrefAttr.includes('#')&&!hrefAttr.startsWith('#')){hrefAttr=`#${hrefAttr.split('#')[1]}`}
